@@ -1,0 +1,132 @@
+div.containerAbout {
+  width: 100vw;
+  height: auto;
+  
+  margin: 0 0;
+  background: var(--blue);
+
+  -webkit-animation: fadeIn 0.7s ease-in-out;
+  -moz-animation: fadeIn 0.7s ease-in-out;
+  -o-animation: fadeIn 0.7s ease-in-out;
+  animation: fadeIn 0.7s ease-in-out;
+}
+
+div.containerAbout main {
+  width: 100%;
+  height: 100vh;
+
+  padding: 3rem 3rem 3rem 5rem;
+  background: var(--blue);
+  background-image: url('../../../public/landing-logo.svg');
+  background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+div.containerAbout > main div {
+  width: 72%;
+  height: 80%;
+
+  color: var(--white);
+  /* border: 1px solid red; */
+}
+
+div.containerAbout > main div h1 {
+  font: 800 2.8rem 'Nunito';
+}
+
+div.containerAbout > main div h2 {
+  margin-top: 1.5rem;
+  
+  font: 700 1.4rem 'Nunito';
+  color: #dfdfdf;
+}
+
+div.containerAbout > main div p {
+  margin-top: 1.9rem;
+  
+  font: 600 1.1rem 'Nunito';
+  color: #c0c0c0;
+}
+
+div.containerAbout div.about {
+  width: 100%;
+  height: auto;
+
+  padding: 0 4rem 8rem 4rem;
+  background: var(--blue-dark);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+div.containerAbout div.about > div {
+  width: 85%;
+  height: auto;
+
+  margin-top: 7rem;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+div.containerAbout div.about > div div {
+  width: 52%;
+}
+
+div.containerAbout div.about > div div h1 {
+  font: 800 2.5rem 'Nunito';
+  color: var(--white);
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+div.containerAbout div.about > div div h1 hr {
+  width: 4rem;
+  height: 0.3rem;
+  border: none;
+  border-radius: 8px;
+  background: #fff;
+  margin-right: 0.5rem;
+}
+
+div.containerAbout div.about > div div p {
+  font: 600 1.1rem 'Nunito';
+  color: #cfcfcf;
+}
+
+div.containerAbout div.about > div img {
+  width: 25rem;
+
+  border-radius: 15px;
+}
+
+/* */
+
+@-webkit-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; } 
+}
+
+@-moz-keyframes fadeIn {
+  0% { opacity: 0;}
+  100% { opacity: 1; }
+}
+
+@-o-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}

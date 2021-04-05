@@ -1,0 +1,169 @@
+div.containerLogin {
+  height: 100vh;
+  width: 100vw;
+  
+  margin: 0 0;
+
+  display: flex;
+  flex-direction: row;
+
+  background: var(--blue);
+
+  -webkit-animation: fadeIn 0.7s ease-in-out;
+  -moz-animation: fadeIn 0.7s ease-in-out;
+  -o-animation: fadeIn 0.7s ease-in-out;
+  animation: fadeIn 0.7s ease-in-out;
+}
+
+div.containerLogin section:first-child {
+  width: 45%;
+  height: 100%;
+}
+
+div.containerLogin section:first-child > img {
+  width: 100%;
+}
+
+div.containerLogin section:last-child {
+  width: 55%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  /* border: 1px solid red; */
+}
+
+div.containerLogin section:last-child img {
+  margin-top: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+div.containerLogin section:last-child form {
+  width: 60%;
+  height: 60%;
+
+  /* border: 1px solid red; */
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+div.containerLogin section:last-child form h1 {
+  font-family: 'Inter';
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--white);
+  line-height: 5rem;
+}
+
+div.containerLogin section:last-child form p {
+  width: 50%;
+  font-family: 'Inter';
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-highlight);
+}
+
+div.containerLogin section:last-child form > div {
+  width: 100%;
+  height: 3.8rem;
+
+  margin-top: 2.5rem;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+
+  /* border: 1px solid red; */
+}
+
+div.containerLogin section:last-child form > div input {
+  width: 70%;
+  height: 100%;
+
+  padding: 1.2rem;
+  outline: none;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  color: var(--text-highlight);
+  
+  background: linear-gradient(90deg, #4953B8 0%, rgba(73, 83, 184, 0.2) 100%);
+}
+
+div.containerLogin section:last-child form > div input::placeholder {
+  color: var(--text-highlight);
+}
+
+div.containerLogin section:last-child form > div input:focus + button.buttonLogin {
+  background: var(--green);
+}
+
+div.containerLogin section:last-child form > div button {
+  width: 18%;
+  height: 100%;
+
+  cursor: none;
+  border-radius: 0 5px 5px 0;
+  border: none;
+  outline: none;
+  text-decoration: none;
+
+  background: var(--blue-dark);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: 0.2s;
+}
+
+div.containerLogin section:last-child form > div button.buttonLogin {
+  cursor: pointer;
+}
+
+div.containerLogin section:last-child form > div button.buttonLogin:hover {
+  filter: brightness(90%);
+}
+
+div.containerLogin section:last-child form > a {
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--text-highlight);
+
+  cursor: pointer;
+  margin-top: 2rem;
+
+  transition: 0.2s;
+}
+
+div.containerLogin section:last-child form > a:hover {
+  color: var(--white);
+}
+
+/* */
+
+@-webkit-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; } 
+}
+
+@-moz-keyframes fadeIn {
+  0% { opacity: 0;}
+  100% { opacity: 1; }
+}
+
+@-o-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}

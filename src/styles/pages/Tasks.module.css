@@ -1,0 +1,222 @@
+div.container {
+  width: 100vw;
+  height: auto;
+  min-height: 100vh;
+
+  /* border: 1px solid red; */
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+div.container div.tasks {
+  width: 91%;
+  min-height: 100vh;
+  height: auto;
+
+  padding: 2rem;
+}
+
+div.container div.tasks h1 {
+  font-size: 1.5rem;
+  font-weight: 300;
+
+  color: var(--blue);
+}
+
+div.container div.tasks form.addContainer {
+  width: 100%;
+  height: 14%;
+
+  margin-top: 1rem;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+div.container div.tasks form.addContainer input,
+div.container div.tasks form.addContainer select {
+  height: 75%;
+
+  padding: 1.2rem;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  color: var(--blue);
+  font-size: 1rem;
+  
+  background: var(--white);
+}
+
+div.container div.tasks form.addContainer button {
+  width: 20%;
+  height: 75%;
+
+  padding: 1.2rem;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  color: var(--blue);
+  
+  background: var(--white);
+
+  transition: 0.2s;
+}
+
+div.container div.tasks form.addContainer button:hover {
+  background: var(--blue);
+  color: var(--white);
+}
+
+div.container div.tasks div.containerTitleTasks {
+  width: 100%;
+  height: 3rem;
+
+  margin-top: 1rem;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+div.container div.tasks div.containerTitleTasks h1 {
+  width: 15%;
+  height: 100%;
+
+  color: var(--line-heilight);
+  font-size: 1rem;
+  font-weight: 600;
+  opacity: 0.7;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+div.container div.tasks div.containerTitleTasks p {
+  width: 64%;
+  height: 100%;
+
+  color: var(--line-heilight);
+  font-size: 1rem;
+  font-weight: 600;
+  opacity: 0.7;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+div.container div.tasks div.containerTitleTasks strong {
+  width: 19%;
+  height: 100%;
+
+  color: var(--line-heilight);
+  font-size: 1rem;
+  font-weight: 600;
+  opacity: 0.7;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+div.container div.tasks div.containerTask {
+  width: 100%;
+  height: 5.5rem;
+
+  margin-bottom: 1rem;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+div.container div.tasks div.containerTask h1 {
+  width: 15%;
+  height: 100%;
+
+  background: var(--white);
+  border-bottom: 3px solid var(--blue);
+
+  color: var(--blue);
+  font-size: 1.3rem;
+  font-weight: 600;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div.container div.tasks div.containerTask p {
+  width: 64%;
+  height: 100%;
+
+  background: var(--white);
+  border-bottom: 3px solid var(--blue);
+  padding: 1.2rem;
+
+  color: var(--blue);
+  font-size: 1rem;
+  font-weight: 500;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+div.container div.tasks div.containerTask div {
+  width: 19%;
+  height: 100%;
+
+  background: var(--white);
+  border-bottom: 3px solid var(--blue);
+  padding: 1.2rem;
+
+  color: var(--white);
+  font-size: 1rem;
+  font-weight: 500;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+div.container div.tasks div.containerTask div button {
+  width: 45%;
+  height: 100%;
+
+  border: none;
+  border-radius: 4px;
+  background: var(--background);
+
+  color: var(--white);
+  font-size: 1rem;
+
+  transition: 0.1s;
+}
+
+div.container div.tasks div.containerTask div button.delete {
+  border: 1px solid crimson;
+  color: crimson;
+}
+div.container div.tasks div.containerTask div button.delete:hover {
+  background: crimson;
+  color: var(--white);
+}
+
+div.container div.tasks div.containerTask div button.edit {
+  border: 1px solid #fcd116;
+  color: #fcd116;
+}
+div.container div.tasks div.containerTask div button.edit:hover {
+  background: #fcd116;
+  color: var(--white);
+}

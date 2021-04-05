@@ -1,0 +1,33 @@
+/* Forma de só o componente que precisa do css acessar */
+
+/* Projetos grandes, como eu já experiencie, os arquivos/classes css se interferem e acaba bugando tudo */
+
+header.experienceBar {
+  display: flex;
+  align-items: center;
+}
+
+header.experienceBar span {
+  font-size: 1rem;
+}
+
+header.experienceBar > div {
+  flex: 1;
+  height: 4px;
+  border-radius: 4px;
+  background: var(--gray-line);
+  margin: 0 1.5rem;
+  position: relative;
+}
+
+header.experienceBar > div > div {
+  height: 4px;
+  border-radius: 4px;
+  background: var(--green);
+}
+
+span.currentExperience {
+  position: absolute;
+  top: 12px;
+  transform: translateX(-50%);
+}
